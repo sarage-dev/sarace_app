@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sarace_app/static/css/main.df629149.css",
+    "main.js": "/sarace_app/static/js/main.18e281c4.js",
+    "static/js/787.43261b7f.chunk.js": "/sarace_app/static/js/787.43261b7f.chunk.js",
+    "static/media/sarace_001.jpeg": "/sarace_app/static/media/sarace_001.0951ceaf5345d4bc79a2.jpeg",
+    "static/media/divider.png": "/sarace_app/static/media/divider.b74876d548bd94312252.png",
+    "index.html": "/sarace_app/index.html",
+    "main.df629149.css.map": "/sarace_app/static/css/main.df629149.css.map",
+    "main.18e281c4.js.map": "/sarace_app/static/js/main.18e281c4.js.map",
+    "787.43261b7f.chunk.js.map": "/sarace_app/static/js/787.43261b7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df629149.css",
+    "static/js/main.18e281c4.js"
+  ]
+}

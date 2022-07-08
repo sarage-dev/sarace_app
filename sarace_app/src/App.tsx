@@ -1,24 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Content from "./components/Content";
+import { CssBaseline, Grid } from "@mui/material";
+import Contact from "./components/Contact";
+import Shop from "./components/Shop";
+
+const sections = [
+  {
+    title: "HAKKIMIZDA",
+    url: "#hakkimizda",
+  },
+  { title: "ALIŞVERİŞ", url: "#alisveris" },
+  {
+    title: "İLETİŞİM",
+    url: "#iletisim",
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CssBaseline />
+      <Grid container spacing={2}>
+        <Grid item xs={12} className="navbar-bg-grid">
+          <Navbar title={"SARACE"} sections={sections} />
+        </Grid>
+        <Grid item xs={12}>
+          <Content />
+        </Grid>
+        <Grid item xs={12}>
+          <Shop />
+        </Grid>
+        <Grid item xs={12}>
+          <Contact />
+        </Grid>
+        <Grid item xs={12}>
+          <Footer
+            description={"Sargın Ayakkabıcılık San. ve Tic. Ltd. Şti."}
+            title={"Sarace"}
+          />
+        </Grid>
+      </Grid>
     </div>
   );
 }
